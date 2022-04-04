@@ -9,13 +9,15 @@ MQTT_PORT = 1883
 MQTT_CLIENT_ID = f'python-mqtt-light-{random.randint(0, 1000)}'
 MQTT_LIGHT_TOPIC = "zigbee2mqtt/Aqara Motion Sensor"
 MQTT_SUBSCRIBE_TOPICS = [
-    ("zigbee2mqtt/Aqara Motion Sensor", 0), ("tasmota/stat/tasmota-plug1/RESULT", 0), ("tasmota/stat/tasmota-plug2/RESULT", 0), ("zigbee2mqtt/Aqara Temperature Sensor", 0)]
+    ("zigbee2mqtt/Aqara Motion Sensor", 0), ("zigbee2mqtt/Aqara Temperature Sensor", 0), ("tasmota/stat/tasmota-plug1/RESULT", 0), ("tasmota/stat/tasmota-plug2/RESULT", 0), ("tasmota/stat/tasmota-aoycocr1/RESULT", 0)]
 MQTT_LIGHT_SWITCH_TOPIC = "tasmota/cmnd/tasmota-plug1/POWER"
 MQTT_FAN_SWITCH_TOPIC = "tasmota/cmnd/tasmota-plug2/POWER"
+MQTT_AIRCON_SWITCH_TOPIC = "tasmota/cmnd/tasmota-aoycocr1/POWER"
 TEMP_THRESHOLD = 25.0
 sleepStatus = False
 lightState = 'OFF'
 fanState = 'OFF'
+airconState = 'OFF'
 lumens = 20
 motion = False
 temperature = 0.0
@@ -36,7 +38,7 @@ def connect_mqtt() -> mqtt_client:
 
 
 def on_message(client, userdata, message):
-    global lumens, lightState, fanState, sleepStatus, motion, temperature
+    global lumens, lightState, fanState, airconState, sleepStatus, motion, temperature
 
     # SET CURRENT STATES
     obj = json.loads(str(message.payload.decode("utf-8")))
@@ -45,14 +47,17 @@ def on_message(client, userdata, message):
         obj['POWER']) if 'POWER' in obj and message.topic == 'tasmota/stat/tasmota-plug1/RESULT' else lightState
     fanState = str(
         obj['POWER']) if 'POWER' in obj and message.topic == 'tasmota/stat/tasmota-plug2/RESULT' else fanState
+    airconState = str(
+        obj['POWER']) if 'POWER' in obj and message.topic == 'tasmota/stat/tasmota-aoycocr1/RESULT' else airconState
     motion = obj['occupancy'] if 'occupancy' in obj else motion
     temperature = float(
         obj['temperature']) if 'temperature' in obj and message.topic == 'zigbee2mqtt/Aqara Temperature Sensor' else temperature
 
     # EVENTS
-    if not motion and lightState != 'OFF' and fanState != 'OFF':
+    if not motion and not sleepStatus and lightState != 'OFF' and fanState != 'OFF':
         publish(client, MQTT_LIGHT_SWITCH_TOPIC, 'OFF')
         publish(client, MQTT_FAN_SWITCH_TOPIC, 'OFF')
+        publish(client, MQTT_AIRCON_SWITCH_TOPIC, 'OFF')
         print('no motion detected, turning off lights and fans...')
 
     if lumens <= 10 and lightState != 'ON' and motion and not sleepStatus:

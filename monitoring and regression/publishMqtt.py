@@ -26,10 +26,10 @@ def connect_mqtt():
 
 def publish(client, temperature):
     client.publish(topic, temperature, retain=True)
-    print("published:", temperature)
+    print("Published:", temperature, "to Topic: ", topic)
 
 def run(temperature):
     client = connect_mqtt()
     # publish value
     publish(client, temperature)
-    client.loop_forever()
+    # client.loop_forever()

@@ -5,7 +5,7 @@ import json
 broker = "192.168.0.100"
 port = 1883
 topic = "zigbee2mqtt/Aqara Temperature Sensor"
-client_id = '111'
+client_id = '113'
 
 username = ""
 password = ""

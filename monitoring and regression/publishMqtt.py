@@ -3,7 +3,7 @@ import json
 
 broker = "192.168.0.100"
 port = 1883
-client_id = '111'
+client_id = '114'
 
 username = ""
 password = ""

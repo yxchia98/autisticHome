@@ -6,7 +6,7 @@ import csv
 broker = "192.168.0.100"
 port = 1883
 topic = "zigbee2mqtt/Mi Motion"
-client_id = '111'
+client_id = '112'
 
 username = ""
 password = ""

@@ -1,4 +1,5 @@
 from paho.mqtt import client as mqtt_client
+import json
 
 broker = "192.168.0.100"
 port = 1883
@@ -25,8 +26,10 @@ def connect_mqtt():
     return client 
 
 def publish(client, temperature):
-    client.publish(topic, temperature, retain=True)
-    print("Published:", temperature, "to Topic: ", topic)
+    tempJson = {"temperature": round(temperature, 2)}
+    temperatureSend = json.dumps(tempJson)
+    client.publish(topic, temperatureSend, retain=True)
+    print("Published:", temperatureSend, "to Topic: ", topic)
 
 def run(temperature):
     client = connect_mqtt()

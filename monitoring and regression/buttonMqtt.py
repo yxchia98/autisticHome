@@ -37,7 +37,7 @@ def suscribe(client: mqtt_client):
         action = jsonObj["action"]
         now = datetime.now().strftime("%Y-%m-%d %H:%M")
         
-        if(action == "single"):
+        if(action == "triple"):
             sleep = not(sleepStatus)
             output = str(action) + "," + str(sleepStatus) + "," + str(now) + "\n"
             print(output)

@@ -13,7 +13,10 @@ while(True):
     prep.preprocessData()
 
     # run linear regression, and publish via mqtt
-    # sleepRatioLinearRegression.runLinearRegression()
+    sleepRatioLinearRegression.runLinearRegression()
     now = datetime.now().strftime('%Y-%m-%d %H:%M')
     print("Last Updated: ", now)
     time.sleep(DAY)
+
+
+# remember to run buttonMqtt.py, motionMqtt.py and tempHumidMqtt.py simultaneously with this script

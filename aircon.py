@@ -9,12 +9,12 @@ MQTT_PORT = 1883
 MQTT_CLIENT_ID = f'python-mqtt-light-{random.randint(0, 1000)}'
 MQTT_LIGHT_TOPIC = "zigbee2mqtt/Aqara Motion Sensor"
 MQTT_SUBSCRIBE_TOPICS = [
-    ("zigbee2mqtt/Aqara Temperature Sensor", 1), ("tasmota/stat/tasmota-aoycocr1/RESULT", 1), ("zigbee2mqtt/SLEEPSTATE", 1)]
+    ("user/preferredTemp", 1), ("tasmota/stat/tasmota-aoycocr1/RESULT", 1), ("zigbee2mqtt/SLEEPSTATE", 1)]
 MQTT_AIRCON_SWITCH_TOPIC = "tasmota/cmnd/tasmota-aoycocr1/POWER"
 MQTT_AIRCON_STATE_TOPIC = "aircon/TEMPERATURE"
 TEMP_THRESHOLD = 28.0
 sleepStatus = 'off'
-airconState = 'ON'
+airconState = 'OFF'
 temperature = 0.0
 
 
@@ -43,9 +43,10 @@ def on_message(client, userdata, message):
 
     airconState = str(
         obj['POWER']) if 'POWER' in obj and message.topic == 'tasmota/stat/tasmota-aoycocr1/RESULT' else airconState
+    print('Aircon State:', airconState)
 
     temperature = float(
-        obj['temperature']) if 'temperature' in obj and message.topic == 'zigbee2mqtt/Aqara Temperature Sensor' else temperature
+        obj['temperature']) if 'temperature' in obj and message.topic == 'user/preferredTemp' else temperature
 
     # EVENTS
     if sleepStatus == 'on':
@@ -53,6 +54,10 @@ def on_message(client, userdata, message):
             publish(client, MQTT_AIRCON_SWITCH_TOPIC, 'ON')
             print(
                 'Entering sleep mode, turning on aircon...')
+            publish(client, MQTT_AIRCON_STATE_TOPIC, temperature)
+            print(
+                f'Setting aircon to user preferred temperature of {temperature}...'
+            )
 
     else:
         if airconState != 'OFF':

@@ -12,7 +12,6 @@ MQTT_SUBSCRIBE_TOPICS = [
     ("user/preferredTemp", 1), ("tasmota/stat/tasmota-aoycocr1/RESULT", 1), ("zigbee2mqtt/SLEEPSTATE", 1)]
 MQTT_AIRCON_SWITCH_TOPIC = "tasmota/cmnd/tasmota-aoycocr1/POWER"
 MQTT_AIRCON_STATE_TOPIC = "aircon/TEMPERATURE"
-TEMP_THRESHOLD = 28.0
 sleepStatus = 'off'
 airconState = 'OFF'
 temperature = 0.0

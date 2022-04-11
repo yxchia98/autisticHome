@@ -11,7 +11,7 @@ MQTT_LIGHT_TOPIC = "zigbee2mqtt/Aqara Motion Sensor"
 MQTT_SUBSCRIBE_TOPICS = [
     ("zigbee2mqtt/Aqara Temperature Sensor", 1), ("zigbee2mqtt/Aqara Motion Sensor", 1), ("tasmota/stat/tasmota-plug2/RESULT", 1), ("zigbee2mqtt/SLEEPSTATE", 1)]
 MQTT_FAN_SWITCH_TOPIC = "tasmota/cmnd/tasmota-plug2/POWER"
-TEMP_THRESHOLD = 28.0
+TEMP_THRESHOLD = 25.0
 fanState = 'OFF'
 sleepStatus = 'off'
 motion = False

@@ -1,0 +1,37 @@
+homeassistant: true
+permit_join: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://localhost
+  keepalive: 60
+  reject_unauthorized: false
+  version: 4
+serial:
+  port: /dev/ttyACM0
+  adapter: auto
+  disable_led: true
+advanced:
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+device_options:
+  legacy: false
+frontend:
+  port: 8333
+devices:
+  '0x00158d000278187e':
+    friendly_name: Mi Contact Sensor
+    legacy: false
+    optimistic: true
+    retain: true
+  '0x00158d000231ef17':
+    friendly_name: Mi Button
+  '0x00158d0002d6c791':
+    friendly_name: Mi Motion
+  '0x00158d000774f548':
+    friendly_name: Aqara Motion Sensor
+  '0x00158d0006e490bc':
+    friendly_name: Aqara Temperature Sensor
+    legacy: false
+    optimistic: true
+    retain: true

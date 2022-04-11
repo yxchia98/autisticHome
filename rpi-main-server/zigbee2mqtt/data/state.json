@@ -1,0 +1,31 @@
+{
+    "0x00158d0002d6c791": {
+        "occupancy": true,
+        "voltage": 3005,
+        "battery": 100
+    },
+    "0x00158d000231ef17": {
+        "voltage": 3042,
+        "battery": 100
+    },
+    "0x00158d000278187e": {
+        "contact": true,
+        "voltage": 3045,
+        "battery": 100
+    },
+    "0x00158d000774f548": {
+        "occupancy": true,
+        "illuminance": 4,
+        "illuminance_lux": 4,
+        "voltage": 3065,
+        "battery": 100,
+        "temperature": 30
+    },
+    "0x00158d0006e490bc": {
+        "temperature": 24.57,
+        "humidity": 76.38,
+        "pressure": 1005.4,
+        "voltage": 3005,
+        "battery": 100
+    }
+}

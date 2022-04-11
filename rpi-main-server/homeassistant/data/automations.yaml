@@ -1,0 +1,28 @@
+- id: '1649076560435'
+  alias: push sleepState to MQTT
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: input_boolean.sleepstate
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      topic: zigbee2mqtt/SLEEPSTATE
+      retain: true
+      payload: '{"state": "{{ states(''input_boolean.sleepstate'') }}"}'
+  mode: single
+- id: '1649079180946'
+  alias: buttonTripleClick
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.mi_button_action
+    from: triple
+  condition: []
+  action:
+  - service: input_boolean.toggle
+    data: {}
+    target:
+      entity_id: input_boolean.sleepstate
+  mode: single

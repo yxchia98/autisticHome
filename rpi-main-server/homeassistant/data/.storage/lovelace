@@ -1,0 +1,143 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "lovelace",
+    "data": {
+        "config": {
+            "title": "Home",
+            "views": [
+                {
+                    "path": "default_view",
+                    "title": "Home",
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "person.p1_3"
+                            ]
+                        },
+                        {
+                            "type": "weather-forecast",
+                            "entity": "weather.home",
+                            "show_forecast": false
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "sensor.ble_battery_a4c1383610be"
+                                },
+                                {
+                                    "entity": "sensor.ble_temperature_a4c1383610be"
+                                },
+                                {
+                                    "entity": "sensor.ble_humidity_a4c1383610be"
+                                },
+                                {
+                                    "entity": "sensor.ble_rssi_a4c1383610be"
+                                },
+                                {
+                                    "entity": "device_tracker.ble_tracker_a4c1383610be"
+                                },
+                                {
+                                    "entity": "sensor.ble_voltage_a4c1383610be"
+                                }
+                            ],
+                            "title": "Xiaomi BLE Temperature",
+                            "state_color": true
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.aqara_motion_sensor_occupancy"
+                                },
+                                {
+                                    "entity": "sensor.aqara_motion_sensor_battery"
+                                },
+                                {
+                                    "entity": "sensor.aqara_motion_sensor_illuminance_lux"
+                                },
+                                {
+                                    "entity": "sensor.aqara_motion_sensor_temperature"
+                                }
+                            ],
+                            "title": "Aqara Motion",
+                            "state_color": true
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.mi_motion_occupancy"
+                                },
+                                {
+                                    "entity": "sensor.mi_motion_battery"
+                                }
+                            ],
+                            "title": "Xiaomi Motion",
+                            "state_color": true
+                        },
+                        {
+                            "show_name": true,
+                            "show_icon": true,
+                            "show_state": true,
+                            "type": "glance",
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.mi_contact_sensor_contact"
+                                },
+                                {
+                                    "entity": "sensor.mi_contact_sensor_battery"
+                                }
+                            ],
+                            "title": "Mi Door Sensor"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "sensor.mi_button_action"
+                                },
+                                {
+                                    "entity": "sensor.mi_button_battery"
+                                }
+                            ],
+                            "title": "Mi Button",
+                            "state_color": true
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "sensor.aqara_temperature_sensor_temperature"
+                                },
+                                {
+                                    "entity": "sensor.aqara_temperature_sensor_pressure"
+                                },
+                                {
+                                    "entity": "sensor.aqara_temperature_sensor_humidity"
+                                },
+                                {
+                                    "entity": "sensor.aqara_temperature_sensor_battery"
+                                }
+                            ],
+                            "state_color": true,
+                            "title": "Aqara Temperature Sensor"
+                        },
+                        {
+                            "show_name": true,
+                            "show_icon": true,
+                            "type": "button",
+                            "tap_action": {
+                                "action": "toggle"
+                            },
+                            "entity": "switch.tasmota_mylamp",
+                            "show_state": false
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

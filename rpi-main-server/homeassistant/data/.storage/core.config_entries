@@ -1,0 +1,165 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "core.config_entries",
+    "data": {
+        "entries": [
+            {
+                "entry_id": "1537336c6270810d0cdccc508dda88cb",
+                "version": 1,
+                "domain": "met",
+                "title": "Home",
+                "data": {
+                    "track_home": true
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "onboarding",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "c007eedec2232fd6d91258dfd53b4deb",
+                "version": 1,
+                "domain": "hacs",
+                "title": "",
+                "data": {
+                    "token": "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"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "6b27905d238065500e75617d99e2c57d",
+                "version": 5,
+                "domain": "ble_monitor",
+                "title": "Bluetooth Low Energy Monitor",
+                "data": {},
+                "options": {
+                    "bt_interface": [
+                        "DC:A6:32:9D:80:57"
+                    ],
+                    "bt_auto_restart": false,
+                    "active_scan": false,
+                    "discovery": true,
+                    "use_median": false,
+                    "period": 60,
+                    "decimals": 1,
+                    "log_spikes": false,
+                    "restore_state": false,
+                    "report_unknown": "Off",
+                    "devices": [
+                        {
+                            "mac": "A4:C1:38:36:10:BE",
+                            "temperature_unit": "\u00b0C",
+                            "decimals": "default",
+                            "use_median": "default",
+                            "restore_state": "default",
+                            "reset_timer": 35,
+                            "report_unknown": false,
+                            "track_device": true,
+                            "tracker_scan_interval": 20,
+                            "consider_home": 180,
+                            "delete device": false,
+                            "uuid": "",
+                            "name": "A4C1383610BE"
+                        }
+                    ],
+                    "is_flow": true,
+                    "hci_interface": [
+                        0
+                    ]
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "6b27905d238065500e75617d99e2c57d",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "c3f7490ef1ecaa3118591bf184d0ffe0",
+                "version": 1,
+                "domain": "nmap_tracker",
+                "title": "Nmap Tracker 192.168.0.1",
+                "data": {},
+                "options": {
+                    "hosts": "192.168.0.0/24",
+                    "home_interval": 0,
+                    "exclude": "192.168.0.100",
+                    "scan_options": "-F -T4 --min-rate 10 --host-timeout 5s",
+                    "interval_seconds": 120,
+                    "consider_home": 180
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "9509c965078f22551fcc6ccfd9f54c49",
+                "version": 1,
+                "domain": "mqtt",
+                "title": "localhost",
+                "data": {
+                    "broker": "localhost",
+                    "port": 1883,
+                    "birth_message": {
+                        "topic": "homeassistant/status",
+                        "payload": "online",
+                        "qos": 0,
+                        "retain": false
+                    },
+                    "will_message": {
+                        "topic": "homeassistant/status",
+                        "payload": "offline",
+                        "qos": 0,
+                        "retain": false
+                    },
+                    "discovery": true
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "2bdd2cfcd6d807788c9bdc7b7820d5be",
+                "version": 1,
+                "domain": "tasmota",
+                "title": "Tasmota",
+                "data": {
+                    "discovery_prefix": "tasmota/discovery"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "44baa2359d03fd8c196c9682e5776daf",
+                "version": 1,
+                "domain": "upnp",
+                "title": "Wireless Router TL-MR3020",
+                "data": {
+                    "hostname": "192.168.0.254"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "ignore",
+                "unique_id": "uuid:060b7353-fca6-4070-85f4-1fbfb9add62c::urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+                "disabled_by": null
+            }
+        ]
+    }
+}

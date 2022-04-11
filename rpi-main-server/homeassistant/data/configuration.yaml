@@ -1,0 +1,22 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+# sensor:
+#   - platform: mitemp_bt
+#     mac: "A4:C1:38:36:10:BE"
+#     name: Xiaomi BLE Temp
+#     force_update: true
+#     median: 1
+#     monitored_conditions:
+#       - temperature
+#       - humidity
+#       - battery

@@ -1,0 +1,275 @@
+{
+    "version": 1,
+    "minor_version": 3,
+    "key": "core.device_registry",
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "1537336c6270810d0cdccc508dda88cb"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "met"
+                    ]
+                ],
+                "manufacturer": "Met.no",
+                "model": "Forecast",
+                "name": "Forecast",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": "service",
+                "id": "04e352e7df085e5e9dfc6f5af720a3ec",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://www.met.no/en"
+            },
+            {
+                "config_entries": [
+                    "c007eedec2232fd6d91258dfd53b4deb"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hacs",
+                        "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd"
+                    ]
+                ],
+                "manufacturer": "hacs.xyz",
+                "model": "",
+                "name": "HACS",
+                "sw_version": "1.19.3",
+                "hw_version": null,
+                "entry_type": "service",
+                "id": "202eca18db29075305abaa6199209377",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "homeassistant://hacs"
+            },
+            {
+                "config_entries": [
+                    "6b27905d238065500e75617d99e2c57d"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "ble_monitor",
+                        "A4:C1:38:36:10:BE"
+                    ]
+                ],
+                "manufacturer": "ATC",
+                "model": "ATC",
+                "name": "A4C1383610BE",
+                "sw_version": "ATC (Custom)",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "7cd95baffe570857b70b806a0ce858be",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "6b27905d238065500e75617d99e2c57d"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "ble_monitor",
+                        "00000000-0000-0000-0000-000000000000"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iBeacon",
+                "name": "00000000000000000000000000000000",
+                "sw_version": "iBeacon",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "bee2c651bc57acb2fcfdba5cc88af9df",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "9509c965078f22551fcc6ccfd9f54c49"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d000278187e"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "MiJia door & window contact sensor (MCCGQ01LM)",
+                "name": "Mi Contact Sensor",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "13fefb3fbefc79e3dc8092f4949a352f",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "9509c965078f22551fcc6ccfd9f54c49"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d000231ef17"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "MiJia wireless switch (WXKG01LM)",
+                "name": "Mi Button",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "559efd74383992acf4bc0f56f9b59e9d",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "9509c965078f22551fcc6ccfd9f54c49"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0002d6c791"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "MiJia human body movement sensor (RTCGQ01LM)",
+                "name": "Mi Motion",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "6ba04e4096304a917771deb8c87899d7",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "9509c965078f22551fcc6ccfd9f54c49"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d000774f548"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara human body movement and illuminance sensor (RTCGQ11LM)",
+                "name": "Aqara Motion Sensor",
+                "sw_version": "3000-0001",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "0e4fb78d3b89462ec758ac2944d1ed99",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "9509c965078f22551fcc6ccfd9f54c49"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0006e490bc"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
+                "name": "Aqara Temperature Sensor",
+                "sw_version": "3000-0001",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "eca648a69f7a8131530b5cc85b7f16e0",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "c3f7490ef1ecaa3118591bf184d0ffe0",
+                    "2bdd2cfcd6d807788c9bdc7b7820d5be"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "a4:cf:12:d5:f1:a7"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Tasmota",
+                "model": "Aoycocr U3S",
+                "name": "My Lamp Switch",
+                "sw_version": "9.2.0",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "86dc81e9693f31a0d6a04e1665aeba25",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "http://192.168.0.105/"
+            },
+            {
+                "config_entries": [
+                    "c3f7490ef1ecaa3118591bf184d0ffe0",
+                    "2bdd2cfcd6d807788c9bdc7b7820d5be"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "c8:2b:96:02:3c:d0"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Tasmota",
+                "model": "Aoycocr U3S",
+                "name": "Caleb Lamp Switch",
+                "sw_version": "9.2.0",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "40b2d8a5c0f5c3aa694d99721f193696",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "http://192.168.0.104/"
+            }
+        ],
+        "deleted_devices": []
+    }
+}

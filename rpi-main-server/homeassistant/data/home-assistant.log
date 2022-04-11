@@ -1,0 +1,22 @@
+2022-04-11 23:27:19 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration ble_monitor which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-04-11 23:27:19 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-04-11 23:27:20 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2022-04-11 23:27:31 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2022-04-11 23:27:32 ERROR (MainThread) [custom_components.hacs] Request exception for 'https://api.github.com/rate_limit' with - Cannot connect to host api.github.com:443 ssl:default [Try again]
+Traceback (most recent call last):
+  File "/config/custom_components/hacs/base.py", line 427, in async_can_update
+    response = await self.async_github_api_method(self.githubapi.rate_limit)
+  File "/config/custom_components/hacs/base.py", line 478, in async_github_api_method
+    raise HacsException(_exception)
+custom_components.hacs.exceptions.HacsException: Request exception for 'https://api.github.com/rate_limit' with - Cannot connect to host api.github.com:443 ssl:default [Try again]
+2022-04-11 23:27:45 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/config/custom_components/hacs/base.py", line 562, in startup_tasks
+    await self.async_load_default_repositories()
+  File "/config/custom_components/hacs/base.py", line 706, in async_load_default_repositories
+    for item in await self.async_github_get_hacs_default_file(HacsCategory.REMOVED):
+  File "/config/custom_components/hacs/base.py", line 441, in async_github_get_hacs_default_file
+    response = await self.async_github_api_method(
+  File "/config/custom_components/hacs/base.py", line 478, in async_github_api_method
+    raise HacsException(_exception)
+custom_components.hacs.exceptions.HacsException: Request exception for 'https://api.github.com/repos/hacs/default/contents/removed' with - Cannot connect to host api.github.com:443 ssl:default [Try again]

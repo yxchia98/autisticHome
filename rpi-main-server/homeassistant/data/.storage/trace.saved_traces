@@ -1,0 +1,1566 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "trace.saved_traces",
+    "data": {
+        "automation.1649079180946": [
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "f8f3ca94d2a1e90870605c1b0543c10e",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:11.760132+00:00",
+                        "finish": "2022-04-11T04:12:11.782997+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649079180946",
+                    "trigger": "state of sensor.mi_button_action",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-04-11T04:12:11.760798+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.buttontripleclick",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-04-11T04:11:57.312293+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1649079180946",
+                                            "friendly_name": "buttonTripleClick"
+                                        },
+                                        "last_changed": "2022-04-11T02:24:01.739909+00:00",
+                                        "last_updated": "2022-04-11T04:11:57.319651+00:00",
+                                        "context": {
+                                            "id": "273650c19693a7d5c51db4fd94cb9237",
+                                            "parent_id": "6d13ecf782a6152dff6777135f7e6c3a",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "sensor.mi_button_action",
+                                        "from_state": {
+                                            "entity_id": "sensor.mi_button_action",
+                                            "state": "triple",
+                                            "attributes": {
+                                                "icon": "mdi:gesture-double-tap",
+                                                "friendly_name": "Mi Button action"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:11.752276+00:00",
+                                            "last_updated": "2022-04-11T04:12:11.752276+00:00",
+                                            "context": {
+                                                "id": "510e70711229f764f6f3a25669d1f40b",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "sensor.mi_button_action",
+                                            "state": "",
+                                            "attributes": {
+                                                "icon": "mdi:gesture-double-tap",
+                                                "friendly_name": "Mi Button action"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:11.757780+00:00",
+                                            "last_updated": "2022-04-11T04:12:11.757780+00:00",
+                                            "context": {
+                                                "id": "0b6037ed2c15f5eef9937741f11ed347",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of sensor.mi_button_action"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-04-11T04:12:11.762581+00:00",
+                                "child_id": {
+                                    "domain": "automation",
+                                    "item_id": "1649076560435",
+                                    "run_id": "724e0f2defe764838ed27937960c3cab"
+                                },
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "1bf85c4b02cf6016afb67ee4b071962e",
+                                        "parent_id": "0b6037ed2c15f5eef9937741f11ed347",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "input_boolean",
+                                        "service": "toggle",
+                                        "service_data": {},
+                                        "target": {
+                                            "entity_id": [
+                                                "input_boolean.sleepstate"
+                                            ]
+                                        }
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1649079180946",
+                        "alias": "buttonTripleClick",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "sensor.mi_button_action",
+                                "from": "triple"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "input_boolean.toggle",
+                                "data": {},
+                                "target": {
+                                    "entity_id": "input_boolean.sleepstate"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "1bf85c4b02cf6016afb67ee4b071962e",
+                        "parent_id": "0b6037ed2c15f5eef9937741f11ed347",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "f8f3ca94d2a1e90870605c1b0543c10e",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:11.760132+00:00",
+                        "finish": "2022-04-11T04:12:11.782997+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649079180946",
+                    "trigger": "state of sensor.mi_button_action"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "8d8d4d65a653b443959f4ee67dca0bc7",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:35.288664+00:00",
+                        "finish": "2022-04-11T04:12:35.301602+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649079180946",
+                    "trigger": "state of sensor.mi_button_action",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-04-11T04:12:35.288917+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.buttontripleclick",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-04-11T04:12:11.761484+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1649079180946",
+                                            "friendly_name": "buttonTripleClick"
+                                        },
+                                        "last_changed": "2022-04-11T02:24:01.739909+00:00",
+                                        "last_updated": "2022-04-11T04:12:11.781837+00:00",
+                                        "context": {
+                                            "id": "1bf85c4b02cf6016afb67ee4b071962e",
+                                            "parent_id": "0b6037ed2c15f5eef9937741f11ed347",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "sensor.mi_button_action",
+                                        "from_state": {
+                                            "entity_id": "sensor.mi_button_action",
+                                            "state": "triple",
+                                            "attributes": {
+                                                "icon": "mdi:gesture-double-tap",
+                                                "friendly_name": "Mi Button action"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:35.285347+00:00",
+                                            "last_updated": "2022-04-11T04:12:35.285347+00:00",
+                                            "context": {
+                                                "id": "89b947bf634918cf14b8af0d2d12393f",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "sensor.mi_button_action",
+                                            "state": "",
+                                            "attributes": {
+                                                "icon": "mdi:gesture-double-tap",
+                                                "friendly_name": "Mi Button action"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:35.286227+00:00",
+                                            "last_updated": "2022-04-11T04:12:35.286227+00:00",
+                                            "context": {
+                                                "id": "cb848463431da9681321376d6b6b2c94",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of sensor.mi_button_action"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-04-11T04:12:35.289807+00:00",
+                                "child_id": {
+                                    "domain": "automation",
+                                    "item_id": "1649076560435",
+                                    "run_id": "d1df28a525e24735eed80cd2ff2acf98"
+                                },
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "feb031ae32050da3f2e49a30c8a8537b",
+                                        "parent_id": "cb848463431da9681321376d6b6b2c94",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "input_boolean",
+                                        "service": "toggle",
+                                        "service_data": {},
+                                        "target": {
+                                            "entity_id": [
+                                                "input_boolean.sleepstate"
+                                            ]
+                                        }
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1649079180946",
+                        "alias": "buttonTripleClick",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "sensor.mi_button_action",
+                                "from": "triple"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "input_boolean.toggle",
+                                "data": {},
+                                "target": {
+                                    "entity_id": "input_boolean.sleepstate"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "feb031ae32050da3f2e49a30c8a8537b",
+                        "parent_id": "cb848463431da9681321376d6b6b2c94",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "8d8d4d65a653b443959f4ee67dca0bc7",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:35.288664+00:00",
+                        "finish": "2022-04-11T04:12:35.301602+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649079180946",
+                    "trigger": "state of sensor.mi_button_action"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "f400980cedaff0d262c97c6ec7dc1e6a",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:40.494074+00:00",
+                        "finish": "2022-04-11T04:12:40.502295+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649079180946",
+                    "trigger": "state of sensor.mi_button_action",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-04-11T04:12:40.494373+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.buttontripleclick",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-04-11T04:12:35.289243+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1649079180946",
+                                            "friendly_name": "buttonTripleClick"
+                                        },
+                                        "last_changed": "2022-04-11T02:24:01.739909+00:00",
+                                        "last_updated": "2022-04-11T04:12:35.301243+00:00",
+                                        "context": {
+                                            "id": "feb031ae32050da3f2e49a30c8a8537b",
+                                            "parent_id": "cb848463431da9681321376d6b6b2c94",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "sensor.mi_button_action",
+                                        "from_state": {
+                                            "entity_id": "sensor.mi_button_action",
+                                            "state": "triple",
+                                            "attributes": {
+                                                "icon": "mdi:gesture-double-tap",
+                                                "friendly_name": "Mi Button action"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:40.491685+00:00",
+                                            "last_updated": "2022-04-11T04:12:40.491685+00:00",
+                                            "context": {
+                                                "id": "f39f4bd4e76ccd35910ac40bb50d5c1b",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "sensor.mi_button_action",
+                                            "state": "",
+                                            "attributes": {
+                                                "icon": "mdi:gesture-double-tap",
+                                                "friendly_name": "Mi Button action"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:40.493152+00:00",
+                                            "last_updated": "2022-04-11T04:12:40.493152+00:00",
+                                            "context": {
+                                                "id": "7923e57605ae762c7ae176c6bcd92232",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of sensor.mi_button_action"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-04-11T04:12:40.495373+00:00",
+                                "child_id": {
+                                    "domain": "automation",
+                                    "item_id": "1649076560435",
+                                    "run_id": "9ec23e4d9e3c27d6e64bdf63a178f434"
+                                },
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "d76c629ec9cd59855babdb83d99f5c3c",
+                                        "parent_id": "7923e57605ae762c7ae176c6bcd92232",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "input_boolean",
+                                        "service": "toggle",
+                                        "service_data": {},
+                                        "target": {
+                                            "entity_id": [
+                                                "input_boolean.sleepstate"
+                                            ]
+                                        }
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1649079180946",
+                        "alias": "buttonTripleClick",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "sensor.mi_button_action",
+                                "from": "triple"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "input_boolean.toggle",
+                                "data": {},
+                                "target": {
+                                    "entity_id": "input_boolean.sleepstate"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "d76c629ec9cd59855babdb83d99f5c3c",
+                        "parent_id": "7923e57605ae762c7ae176c6bcd92232",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "f400980cedaff0d262c97c6ec7dc1e6a",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:40.494074+00:00",
+                        "finish": "2022-04-11T04:12:40.502295+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649079180946",
+                    "trigger": "state of sensor.mi_button_action"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "85fe120dac788d70b47a9cbc9a9bca56",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:56.052708+00:00",
+                        "finish": "2022-04-11T04:12:56.065911+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649079180946",
+                    "trigger": "state of sensor.mi_button_action",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-04-11T04:12:56.052889+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.buttontripleclick",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-04-11T04:12:40.494727+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1649079180946",
+                                            "friendly_name": "buttonTripleClick"
+                                        },
+                                        "last_changed": "2022-04-11T02:24:01.739909+00:00",
+                                        "last_updated": "2022-04-11T04:12:40.501989+00:00",
+                                        "context": {
+                                            "id": "d76c629ec9cd59855babdb83d99f5c3c",
+                                            "parent_id": "7923e57605ae762c7ae176c6bcd92232",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "sensor.mi_button_action",
+                                        "from_state": {
+                                            "entity_id": "sensor.mi_button_action",
+                                            "state": "triple",
+                                            "attributes": {
+                                                "icon": "mdi:gesture-double-tap",
+                                                "friendly_name": "Mi Button action"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:56.049435+00:00",
+                                            "last_updated": "2022-04-11T04:12:56.049435+00:00",
+                                            "context": {
+                                                "id": "981eac4968b16a163a8a413a20700ca2",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "sensor.mi_button_action",
+                                            "state": "",
+                                            "attributes": {
+                                                "icon": "mdi:gesture-double-tap",
+                                                "friendly_name": "Mi Button action"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:56.052159+00:00",
+                                            "last_updated": "2022-04-11T04:12:56.052159+00:00",
+                                            "context": {
+                                                "id": "e7fc1b61b18ea44bd93c4726c58d9e11",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of sensor.mi_button_action"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-04-11T04:12:56.053674+00:00",
+                                "child_id": {
+                                    "domain": "automation",
+                                    "item_id": "1649076560435",
+                                    "run_id": "499e17f1c621971a1a6f24f3cbde4033"
+                                },
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "0e0e0fa5d92f3cab740ce5afce9a56d3",
+                                        "parent_id": "e7fc1b61b18ea44bd93c4726c58d9e11",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "input_boolean",
+                                        "service": "toggle",
+                                        "service_data": {},
+                                        "target": {
+                                            "entity_id": [
+                                                "input_boolean.sleepstate"
+                                            ]
+                                        }
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1649079180946",
+                        "alias": "buttonTripleClick",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "sensor.mi_button_action",
+                                "from": "triple"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "input_boolean.toggle",
+                                "data": {},
+                                "target": {
+                                    "entity_id": "input_boolean.sleepstate"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "0e0e0fa5d92f3cab740ce5afce9a56d3",
+                        "parent_id": "e7fc1b61b18ea44bd93c4726c58d9e11",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "85fe120dac788d70b47a9cbc9a9bca56",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:56.052708+00:00",
+                        "finish": "2022-04-11T04:12:56.065911+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649079180946",
+                    "trigger": "state of sensor.mi_button_action"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "3bbcb8e827e7b51e46b8f4eba4bad187",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:59.959214+00:00",
+                        "finish": "2022-04-11T04:12:59.972981+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649079180946",
+                    "trigger": "state of sensor.mi_button_action",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-04-11T04:12:59.959403+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.buttontripleclick",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-04-11T04:12:56.053172+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1649079180946",
+                                            "friendly_name": "buttonTripleClick"
+                                        },
+                                        "last_changed": "2022-04-11T02:24:01.739909+00:00",
+                                        "last_updated": "2022-04-11T04:12:56.059391+00:00",
+                                        "context": {
+                                            "id": "0e0e0fa5d92f3cab740ce5afce9a56d3",
+                                            "parent_id": "e7fc1b61b18ea44bd93c4726c58d9e11",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "sensor.mi_button_action",
+                                        "from_state": {
+                                            "entity_id": "sensor.mi_button_action",
+                                            "state": "triple",
+                                            "attributes": {
+                                                "icon": "mdi:gesture-double-tap",
+                                                "friendly_name": "Mi Button action"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:59.957482+00:00",
+                                            "last_updated": "2022-04-11T04:12:59.957482+00:00",
+                                            "context": {
+                                                "id": "414304aa2113a0e98e51203c5dfab711",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "sensor.mi_button_action",
+                                            "state": "",
+                                            "attributes": {
+                                                "icon": "mdi:gesture-double-tap",
+                                                "friendly_name": "Mi Button action"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:59.958675+00:00",
+                                            "last_updated": "2022-04-11T04:12:59.958675+00:00",
+                                            "context": {
+                                                "id": "5a686f137a82f89b5f13961b0d1df127",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of sensor.mi_button_action"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-04-11T04:12:59.960219+00:00",
+                                "child_id": {
+                                    "domain": "automation",
+                                    "item_id": "1649076560435",
+                                    "run_id": "2a7172de626e0afa6fc75ef818dd4f7f"
+                                },
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "9c6384b58af6c85a2ff8b74f0e4a0106",
+                                        "parent_id": "5a686f137a82f89b5f13961b0d1df127",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "input_boolean",
+                                        "service": "toggle",
+                                        "service_data": {},
+                                        "target": {
+                                            "entity_id": [
+                                                "input_boolean.sleepstate"
+                                            ]
+                                        }
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1649079180946",
+                        "alias": "buttonTripleClick",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "sensor.mi_button_action",
+                                "from": "triple"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "input_boolean.toggle",
+                                "data": {},
+                                "target": {
+                                    "entity_id": "input_boolean.sleepstate"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "9c6384b58af6c85a2ff8b74f0e4a0106",
+                        "parent_id": "5a686f137a82f89b5f13961b0d1df127",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "3bbcb8e827e7b51e46b8f4eba4bad187",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:59.959214+00:00",
+                        "finish": "2022-04-11T04:12:59.972981+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649079180946",
+                    "trigger": "state of sensor.mi_button_action"
+                }
+            }
+        ],
+        "automation.1649076560435": [
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "724e0f2defe764838ed27937960c3cab",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:11.773569+00:00",
+                        "finish": "2022-04-11T04:12:11.787893+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649076560435",
+                    "trigger": "state of input_boolean.sleepstate",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-04-11T04:12:11.773971+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.push_sleepstate_to_mqtt",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-04-11T04:11:57.316518+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1649076560435",
+                                            "friendly_name": "push sleepState to MQTT"
+                                        },
+                                        "last_changed": "2022-04-11T02:24:01.739257+00:00",
+                                        "last_updated": "2022-04-11T04:11:57.327745+00:00",
+                                        "context": {
+                                            "id": "a05ba69d25e1725d70c66dbffac97e2f",
+                                            "parent_id": "273650c19693a7d5c51db4fd94cb9237",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "input_boolean.sleepstate",
+                                        "from_state": {
+                                            "entity_id": "input_boolean.sleepstate",
+                                            "state": "on",
+                                            "attributes": {
+                                                "editable": true,
+                                                "icon": "mdi:bed-king",
+                                                "friendly_name": "sleepState"
+                                            },
+                                            "last_changed": "2022-04-11T04:11:57.315512+00:00",
+                                            "last_updated": "2022-04-11T04:11:57.315512+00:00",
+                                            "context": {
+                                                "id": "273650c19693a7d5c51db4fd94cb9237",
+                                                "parent_id": "6d13ecf782a6152dff6777135f7e6c3a",
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "input_boolean.sleepstate",
+                                            "state": "off",
+                                            "attributes": {
+                                                "editable": true,
+                                                "icon": "mdi:bed-king",
+                                                "friendly_name": "sleepState"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:11.771858+00:00",
+                                            "last_updated": "2022-04-11T04:12:11.771858+00:00",
+                                            "context": {
+                                                "id": "1bf85c4b02cf6016afb67ee4b071962e",
+                                                "parent_id": "0b6037ed2c15f5eef9937741f11ed347",
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of input_boolean.sleepstate"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-04-11T04:12:11.775200+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "60fc0f948d75e0ea58cf87e57d09107e",
+                                        "parent_id": "1bf85c4b02cf6016afb67ee4b071962e",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "mqtt",
+                                        "service": "publish",
+                                        "service_data": {
+                                            "topic": "zigbee2mqtt/SLEEPSTATE",
+                                            "retain": true,
+                                            "payload": {
+                                                "state": "off"
+                                            }
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1649076560435",
+                        "alias": "push sleepState to MQTT",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "input_boolean.sleepstate"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "mqtt.publish",
+                                "data": {
+                                    "topic": "zigbee2mqtt/SLEEPSTATE",
+                                    "retain": true,
+                                    "payload": "{\"state\": \"{{ states('input_boolean.sleepstate') }}\"}"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "60fc0f948d75e0ea58cf87e57d09107e",
+                        "parent_id": "1bf85c4b02cf6016afb67ee4b071962e",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "724e0f2defe764838ed27937960c3cab",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:11.773569+00:00",
+                        "finish": "2022-04-11T04:12:11.787893+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649076560435",
+                    "trigger": "state of input_boolean.sleepstate"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "d1df28a525e24735eed80cd2ff2acf98",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:35.296496+00:00",
+                        "finish": "2022-04-11T04:12:35.307821+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649076560435",
+                    "trigger": "state of input_boolean.sleepstate",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-04-11T04:12:35.296708+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.push_sleepstate_to_mqtt",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-04-11T04:12:11.774460+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1649076560435",
+                                            "friendly_name": "push sleepState to MQTT"
+                                        },
+                                        "last_changed": "2022-04-11T02:24:01.739257+00:00",
+                                        "last_updated": "2022-04-11T04:12:11.786252+00:00",
+                                        "context": {
+                                            "id": "60fc0f948d75e0ea58cf87e57d09107e",
+                                            "parent_id": "1bf85c4b02cf6016afb67ee4b071962e",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "input_boolean.sleepstate",
+                                        "from_state": {
+                                            "entity_id": "input_boolean.sleepstate",
+                                            "state": "off",
+                                            "attributes": {
+                                                "editable": true,
+                                                "icon": "mdi:bed-king",
+                                                "friendly_name": "sleepState"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:11.771858+00:00",
+                                            "last_updated": "2022-04-11T04:12:11.771858+00:00",
+                                            "context": {
+                                                "id": "1bf85c4b02cf6016afb67ee4b071962e",
+                                                "parent_id": "0b6037ed2c15f5eef9937741f11ed347",
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "input_boolean.sleepstate",
+                                            "state": "on",
+                                            "attributes": {
+                                                "editable": true,
+                                                "icon": "mdi:bed-king",
+                                                "friendly_name": "sleepState"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:35.295112+00:00",
+                                            "last_updated": "2022-04-11T04:12:35.295112+00:00",
+                                            "context": {
+                                                "id": "feb031ae32050da3f2e49a30c8a8537b",
+                                                "parent_id": "cb848463431da9681321376d6b6b2c94",
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of input_boolean.sleepstate"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-04-11T04:12:35.297671+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "50f9be175c1d9bd214510ef4f944c085",
+                                        "parent_id": "feb031ae32050da3f2e49a30c8a8537b",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "mqtt",
+                                        "service": "publish",
+                                        "service_data": {
+                                            "topic": "zigbee2mqtt/SLEEPSTATE",
+                                            "retain": true,
+                                            "payload": {
+                                                "state": "on"
+                                            }
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1649076560435",
+                        "alias": "push sleepState to MQTT",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "input_boolean.sleepstate"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "mqtt.publish",
+                                "data": {
+                                    "topic": "zigbee2mqtt/SLEEPSTATE",
+                                    "retain": true,
+                                    "payload": "{\"state\": \"{{ states('input_boolean.sleepstate') }}\"}"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "50f9be175c1d9bd214510ef4f944c085",
+                        "parent_id": "feb031ae32050da3f2e49a30c8a8537b",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "d1df28a525e24735eed80cd2ff2acf98",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:35.296496+00:00",
+                        "finish": "2022-04-11T04:12:35.307821+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649076560435",
+                    "trigger": "state of input_boolean.sleepstate"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "9ec23e4d9e3c27d6e64bdf63a178f434",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:40.498327+00:00",
+                        "finish": "2022-04-11T04:12:40.510471+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649076560435",
+                    "trigger": "state of input_boolean.sleepstate",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-04-11T04:12:40.498539+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.push_sleepstate_to_mqtt",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-04-11T04:12:35.296997+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1649076560435",
+                                            "friendly_name": "push sleepState to MQTT"
+                                        },
+                                        "last_changed": "2022-04-11T02:24:01.739257+00:00",
+                                        "last_updated": "2022-04-11T04:12:35.306414+00:00",
+                                        "context": {
+                                            "id": "50f9be175c1d9bd214510ef4f944c085",
+                                            "parent_id": "feb031ae32050da3f2e49a30c8a8537b",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "input_boolean.sleepstate",
+                                        "from_state": {
+                                            "entity_id": "input_boolean.sleepstate",
+                                            "state": "on",
+                                            "attributes": {
+                                                "editable": true,
+                                                "icon": "mdi:bed-king",
+                                                "friendly_name": "sleepState"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:35.295112+00:00",
+                                            "last_updated": "2022-04-11T04:12:35.295112+00:00",
+                                            "context": {
+                                                "id": "feb031ae32050da3f2e49a30c8a8537b",
+                                                "parent_id": "cb848463431da9681321376d6b6b2c94",
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "input_boolean.sleepstate",
+                                            "state": "off",
+                                            "attributes": {
+                                                "editable": true,
+                                                "icon": "mdi:bed-king",
+                                                "friendly_name": "sleepState"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:40.497811+00:00",
+                                            "last_updated": "2022-04-11T04:12:40.497811+00:00",
+                                            "context": {
+                                                "id": "d76c629ec9cd59855babdb83d99f5c3c",
+                                                "parent_id": "7923e57605ae762c7ae176c6bcd92232",
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of input_boolean.sleepstate"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-04-11T04:12:40.499492+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "c143f07b3b6c388c3c2288177914bf92",
+                                        "parent_id": "d76c629ec9cd59855babdb83d99f5c3c",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "mqtt",
+                                        "service": "publish",
+                                        "service_data": {
+                                            "topic": "zigbee2mqtt/SLEEPSTATE",
+                                            "retain": true,
+                                            "payload": {
+                                                "state": "off"
+                                            }
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1649076560435",
+                        "alias": "push sleepState to MQTT",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "input_boolean.sleepstate"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "mqtt.publish",
+                                "data": {
+                                    "topic": "zigbee2mqtt/SLEEPSTATE",
+                                    "retain": true,
+                                    "payload": "{\"state\": \"{{ states('input_boolean.sleepstate') }}\"}"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "c143f07b3b6c388c3c2288177914bf92",
+                        "parent_id": "d76c629ec9cd59855babdb83d99f5c3c",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "9ec23e4d9e3c27d6e64bdf63a178f434",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:40.498327+00:00",
+                        "finish": "2022-04-11T04:12:40.510471+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649076560435",
+                    "trigger": "state of input_boolean.sleepstate"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "499e17f1c621971a1a6f24f3cbde4033",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:56.055984+00:00",
+                        "finish": "2022-04-11T04:12:56.067492+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649076560435",
+                    "trigger": "state of input_boolean.sleepstate",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-04-11T04:12:56.056194+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.push_sleepstate_to_mqtt",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-04-11T04:12:40.498841+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1649076560435",
+                                            "friendly_name": "push sleepState to MQTT"
+                                        },
+                                        "last_changed": "2022-04-11T02:24:01.739257+00:00",
+                                        "last_updated": "2022-04-11T04:12:40.510078+00:00",
+                                        "context": {
+                                            "id": "c143f07b3b6c388c3c2288177914bf92",
+                                            "parent_id": "d76c629ec9cd59855babdb83d99f5c3c",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "input_boolean.sleepstate",
+                                        "from_state": {
+                                            "entity_id": "input_boolean.sleepstate",
+                                            "state": "off",
+                                            "attributes": {
+                                                "editable": true,
+                                                "icon": "mdi:bed-king",
+                                                "friendly_name": "sleepState"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:40.497811+00:00",
+                                            "last_updated": "2022-04-11T04:12:40.497811+00:00",
+                                            "context": {
+                                                "id": "d76c629ec9cd59855babdb83d99f5c3c",
+                                                "parent_id": "7923e57605ae762c7ae176c6bcd92232",
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "input_boolean.sleepstate",
+                                            "state": "on",
+                                            "attributes": {
+                                                "editable": true,
+                                                "icon": "mdi:bed-king",
+                                                "friendly_name": "sleepState"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:56.055484+00:00",
+                                            "last_updated": "2022-04-11T04:12:56.055484+00:00",
+                                            "context": {
+                                                "id": "0e0e0fa5d92f3cab740ce5afce9a56d3",
+                                                "parent_id": "e7fc1b61b18ea44bd93c4726c58d9e11",
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of input_boolean.sleepstate"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-04-11T04:12:56.057223+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "ca7928f19f9102952f1912bb2c26187b",
+                                        "parent_id": "0e0e0fa5d92f3cab740ce5afce9a56d3",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "mqtt",
+                                        "service": "publish",
+                                        "service_data": {
+                                            "topic": "zigbee2mqtt/SLEEPSTATE",
+                                            "retain": true,
+                                            "payload": {
+                                                "state": "on"
+                                            }
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1649076560435",
+                        "alias": "push sleepState to MQTT",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "input_boolean.sleepstate"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "mqtt.publish",
+                                "data": {
+                                    "topic": "zigbee2mqtt/SLEEPSTATE",
+                                    "retain": true,
+                                    "payload": "{\"state\": \"{{ states('input_boolean.sleepstate') }}\"}"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "ca7928f19f9102952f1912bb2c26187b",
+                        "parent_id": "0e0e0fa5d92f3cab740ce5afce9a56d3",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "499e17f1c621971a1a6f24f3cbde4033",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:56.055984+00:00",
+                        "finish": "2022-04-11T04:12:56.067492+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649076560435",
+                    "trigger": "state of input_boolean.sleepstate"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "2a7172de626e0afa6fc75ef818dd4f7f",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:59.966734+00:00",
+                        "finish": "2022-04-11T04:12:59.980626+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649076560435",
+                    "trigger": "state of input_boolean.sleepstate",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-04-11T04:12:59.966997+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.push_sleepstate_to_mqtt",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-04-11T04:12:56.056636+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1649076560435",
+                                            "friendly_name": "push sleepState to MQTT"
+                                        },
+                                        "last_changed": "2022-04-11T02:24:01.739257+00:00",
+                                        "last_updated": "2022-04-11T04:12:56.067170+00:00",
+                                        "context": {
+                                            "id": "ca7928f19f9102952f1912bb2c26187b",
+                                            "parent_id": "0e0e0fa5d92f3cab740ce5afce9a56d3",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "input_boolean.sleepstate",
+                                        "from_state": {
+                                            "entity_id": "input_boolean.sleepstate",
+                                            "state": "on",
+                                            "attributes": {
+                                                "editable": true,
+                                                "icon": "mdi:bed-king",
+                                                "friendly_name": "sleepState"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:56.055484+00:00",
+                                            "last_updated": "2022-04-11T04:12:56.055484+00:00",
+                                            "context": {
+                                                "id": "0e0e0fa5d92f3cab740ce5afce9a56d3",
+                                                "parent_id": "e7fc1b61b18ea44bd93c4726c58d9e11",
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "input_boolean.sleepstate",
+                                            "state": "off",
+                                            "attributes": {
+                                                "editable": true,
+                                                "icon": "mdi:bed-king",
+                                                "friendly_name": "sleepState"
+                                            },
+                                            "last_changed": "2022-04-11T04:12:59.965181+00:00",
+                                            "last_updated": "2022-04-11T04:12:59.965181+00:00",
+                                            "context": {
+                                                "id": "9c6384b58af6c85a2ff8b74f0e4a0106",
+                                                "parent_id": "5a686f137a82f89b5f13961b0d1df127",
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of input_boolean.sleepstate"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-04-11T04:12:59.967920+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "8416787ecfd0d9aa209d7879d37dd9a5",
+                                        "parent_id": "9c6384b58af6c85a2ff8b74f0e4a0106",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "mqtt",
+                                        "service": "publish",
+                                        "service_data": {
+                                            "topic": "zigbee2mqtt/SLEEPSTATE",
+                                            "retain": true,
+                                            "payload": {
+                                                "state": "off"
+                                            }
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1649076560435",
+                        "alias": "push sleepState to MQTT",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "input_boolean.sleepstate"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "mqtt.publish",
+                                "data": {
+                                    "topic": "zigbee2mqtt/SLEEPSTATE",
+                                    "retain": true,
+                                    "payload": "{\"state\": \"{{ states('input_boolean.sleepstate') }}\"}"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "8416787ecfd0d9aa209d7879d37dd9a5",
+                        "parent_id": "9c6384b58af6c85a2ff8b74f0e4a0106",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "2a7172de626e0afa6fc75ef818dd4f7f",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-04-11T04:12:59.966734+00:00",
+                        "finish": "2022-04-11T04:12:59.980626+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1649076560435",
+                    "trigger": "state of input_boolean.sleepstate"
+                }
+            }
+        ]
+    }
+}

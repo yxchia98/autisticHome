@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "lovelace.lovelace_home",
+    "data": {
+        "config": {
+            "views": [
+                {
+                    "title": "Home",
+                    "cards": [
+                        {
+                            "type": "custom:mushroom-chips-card",
+                            "chips": [
+                                {
+                                    "type": "entity",
+                                    "entity": "binary_sensor.0x00158d0002d6c791_occupancy",
+                                    "name": "Occupancy"
+                                },
+                                {
+                                    "type": "entity",
+                                    "entity": "binary_sensor.0x00158d000278187e_contact",
+                                    "name": "Contact"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "sensor.0x00158d000278187e_battery",
+                                "sensor.0x00158d000231ef17_battery",
+                                "sensor.0x00158d000231ef17_action"
+                            ]
+                        },
+                        {
+                            "type": "glance",
+                            "entities": [
+                                "sensor.0x00158d0002d6c791_battery",
+                                "sensor.hacs",
+                                "sensor.0x00158d000278187e_battery"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

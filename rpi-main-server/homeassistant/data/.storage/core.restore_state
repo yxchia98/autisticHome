@@ -1,0 +1,716 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "core.restore_state",
+    "data": [
+        {
+            "state": {
+                "entity_id": "person.p1_3",
+                "state": "unknown",
+                "attributes": {
+                    "editable": false,
+                    "id": "p1_3",
+                    "user_id": "9257925e079b49178fa03c855cbb3125",
+                    "friendly_name": "P1_3"
+                },
+                "last_changed": "2022-04-11T15:27:24.183660+00:00",
+                "last_updated": "2022-04-11T15:27:32.960711+00:00",
+                "context": {
+                    "id": "d35e44cfbf9d1e1e4042deece145bce9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_boolean.sleepstate",
+                "state": "off",
+                "attributes": {
+                    "editable": true,
+                    "icon": "mdi:bed-king",
+                    "friendly_name": "sleepState"
+                },
+                "last_changed": "2022-04-11T15:27:27.423351+00:00",
+                "last_updated": "2022-04-11T15:27:27.423351+00:00",
+                "context": {
+                    "id": "c3362db3e5e64e0396add9601452a62b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.push_sleepstate_to_mqtt",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2022-04-11T04:12:59.967338+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1649076560435",
+                    "friendly_name": "push sleepState to MQTT"
+                },
+                "last_changed": "2022-04-11T15:27:27.453740+00:00",
+                "last_updated": "2022-04-11T15:27:27.453740+00:00",
+                "context": {
+                    "id": "83616fca1f4fb91c6e39aafda5374101",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.buttontripleclick",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2022-04-11T04:12:59.959720+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1649079180946",
+                    "friendly_name": "buttonTripleClick"
+                },
+                "last_changed": "2022-04-11T15:27:27.454570+00:00",
+                "last_updated": "2022-04-11T15:27:27.454570+00:00",
+                "context": {
+                    "id": "279ec4f45f6d1da0dc3f51b39e415910",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_a4c1383610be",
+                "state": "29.9",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor_type": "ATC",
+                    "mac_address": "A4:C1:38:36:10:BE",
+                    "last_packet_id": 117,
+                    "firmware": "ATC (Custom)",
+                    "uuid": "A4:C1:38:36:10:BE",
+                    "battery_level": 47,
+                    "last_mean_of": 2,
+                    "median": 29.9,
+                    "mean": 29.9,
+                    "rssi": -49,
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature A4C1383610BE"
+                },
+                "last_changed": "2022-04-11T15:27:31.116742+00:00",
+                "last_updated": "2022-04-11T15:27:31.116742+00:00",
+                "context": {
+                    "id": "201f4123206b65ab0f34d5862fedc02e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_a4c1383610be",
+                "state": "77.5",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor_type": "ATC",
+                    "mac_address": "A4:C1:38:36:10:BE",
+                    "last_packet_id": 117,
+                    "firmware": "ATC (Custom)",
+                    "uuid": "A4:C1:38:36:10:BE",
+                    "battery_level": 47,
+                    "last_mean_of": 2,
+                    "median": 77.5,
+                    "mean": 77.5,
+                    "rssi": -49,
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity A4C1383610BE"
+                },
+                "last_changed": "2022-04-11T15:27:31.117158+00:00",
+                "last_updated": "2022-04-11T15:27:31.117158+00:00",
+                "context": {
+                    "id": "a96609e5f886d5beb903423974bd21e0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_a4c1383610be",
+                "state": "47",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor_type": "ATC",
+                    "mac_address": "A4:C1:38:36:10:BE",
+                    "last_packet_id": 117,
+                    "firmware": "ATC (Custom)",
+                    "uuid": "A4:C1:38:36:10:BE",
+                    "rssi": -49,
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery A4C1383610BE"
+                },
+                "last_changed": "2022-04-11T15:27:31.117408+00:00",
+                "last_updated": "2022-04-11T15:27:31.117408+00:00",
+                "context": {
+                    "id": "cee81fc858a7f6966176c9c536c575fb",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_a4c1383610be",
+                "state": "2.6",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor_type": "ATC",
+                    "mac_address": "A4:C1:38:36:10:BE",
+                    "last_packet_id": 117,
+                    "firmware": "ATC (Custom)",
+                    "uuid": "A4:C1:38:36:10:BE",
+                    "battery_level": 47,
+                    "last_mean_of": 2,
+                    "median": 2.6,
+                    "mean": 2.6,
+                    "rssi": -49,
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage A4C1383610BE"
+                },
+                "last_changed": "2022-04-11T15:27:31.117624+00:00",
+                "last_updated": "2022-04-11T15:27:31.117624+00:00",
+                "context": {
+                    "id": "bec130536a200ee7e56d697682f74f78",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_a4c1383610be",
+                "state": "-49",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor_type": "ATC",
+                    "mac_address": "A4:C1:38:36:10:BE",
+                    "last_packet_id": 117,
+                    "firmware": "ATC (Custom)",
+                    "uuid": "A4:C1:38:36:10:BE",
+                    "battery_level": 47,
+                    "last_mean_of": 2,
+                    "median": -49.0,
+                    "mean": -49,
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi A4C1383610BE"
+                },
+                "last_changed": "2022-04-11T15:27:31.117796+00:00",
+                "last_updated": "2022-04-11T15:27:31.117796+00:00",
+                "context": {
+                    "id": "fbe1c4701d2325ff550eaf5c22db914d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.ble_tracker_a4c1383610be",
+                "state": "home",
+                "attributes": {
+                    "source_type": "bluetooth_le",
+                    "mac": "A4:C1:38:36:10:BE",
+                    "last_seen": "2022-04-11T23:27:28.783620+08:00",
+                    "rssi": -49,
+                    "gateway_id": "ble_monitor",
+                    "friendly_name": "ble tracker A4C1383610BE"
+                },
+                "last_changed": "2022-04-11T15:27:29.402581+00:00",
+                "last_updated": "2022-04-11T15:27:29.402581+00:00",
+                "context": {
+                    "id": "d7be8017a8a3900a8dd71f916502812d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.mi_contact_sensor_battery",
+                "state": "unavailable",
+                "attributes": {
+                    "state_class": "measurement",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "Mi Contact Sensor battery"
+                },
+                "last_changed": "2022-04-11T15:27:29.489371+00:00",
+                "last_updated": "2022-04-11T15:27:29.489371+00:00",
+                "context": {
+                    "id": "4cf7cb4f9870fdd6ad72e4a194eaf68e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": {
+                "native_value": null,
+                "native_unit_of_measurement": "%"
+            },
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.mi_button_battery",
+                "state": "unavailable",
+                "attributes": {
+                    "state_class": "measurement",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "Mi Button battery"
+                },
+                "last_changed": "2022-04-11T15:27:29.759332+00:00",
+                "last_updated": "2022-04-11T15:27:29.759332+00:00",
+                "context": {
+                    "id": "ac710833d05f9e97022244dc42eda7a1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": {
+                "native_value": null,
+                "native_unit_of_measurement": "%"
+            },
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.mi_button_action",
+                "state": "unavailable",
+                "attributes": {
+                    "icon": "mdi:gesture-double-tap",
+                    "friendly_name": "Mi Button action"
+                },
+                "last_changed": "2022-04-11T15:27:29.760077+00:00",
+                "last_updated": "2022-04-11T15:27:29.760077+00:00",
+                "context": {
+                    "id": "11c3eb1ab539c656aae5b42d9b8d9aff",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": {
+                "native_value": null,
+                "native_unit_of_measurement": null
+            },
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.mi_motion_battery",
+                "state": "unavailable",
+                "attributes": {
+                    "state_class": "measurement",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "Mi Motion battery"
+                },
+                "last_changed": "2022-04-11T15:27:29.801272+00:00",
+                "last_updated": "2022-04-11T15:27:29.801272+00:00",
+                "context": {
+                    "id": "c6b6499a2021521ef8e912f29e336ae3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": {
+                "native_value": null,
+                "native_unit_of_measurement": "%"
+            },
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aqara_motion_sensor_battery",
+                "state": "unavailable",
+                "attributes": {
+                    "state_class": "measurement",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "Aqara Motion Sensor battery"
+                },
+                "last_changed": "2022-04-11T15:27:29.802344+00:00",
+                "last_updated": "2022-04-11T15:27:29.802344+00:00",
+                "context": {
+                    "id": "d5e64a00e1dd29479e405cbdb1c8864c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": {
+                "native_value": null,
+                "native_unit_of_measurement": "%"
+            },
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aqara_motion_sensor_temperature",
+                "state": "unavailable",
+                "attributes": {
+                    "state_class": "measurement",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "Aqara Motion Sensor temperature"
+                },
+                "last_changed": "2022-04-11T15:27:29.803558+00:00",
+                "last_updated": "2022-04-11T15:27:29.803558+00:00",
+                "context": {
+                    "id": "15d2b5c34d50b4d8bbf89c299c954ba5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": {
+                "native_value": null,
+                "native_unit_of_measurement": "\u00b0C"
+            },
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aqara_motion_sensor_illuminance_lux",
+                "state": "unavailable",
+                "attributes": {
+                    "state_class": "measurement",
+                    "unit_of_measurement": "lx",
+                    "device_class": "illuminance",
+                    "friendly_name": "Aqara Motion Sensor illuminance lux"
+                },
+                "last_changed": "2022-04-11T15:27:29.881082+00:00",
+                "last_updated": "2022-04-11T15:27:29.881082+00:00",
+                "context": {
+                    "id": "c09d4fe656df0e8fc844712c1183071d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": {
+                "native_value": null,
+                "native_unit_of_measurement": "lx"
+            },
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aqara_temperature_sensor_battery",
+                "state": "unavailable",
+                "attributes": {
+                    "state_class": "measurement",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "Aqara Temperature Sensor battery"
+                },
+                "last_changed": "2022-04-11T15:27:29.881707+00:00",
+                "last_updated": "2022-04-11T15:27:29.881707+00:00",
+                "context": {
+                    "id": "b4c5b3cde1eec9dafeb4412a4edaceba",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": {
+                "native_value": "100",
+                "native_unit_of_measurement": "%"
+            },
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aqara_temperature_sensor_temperature",
+                "state": "unavailable",
+                "attributes": {
+                    "state_class": "measurement",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "Aqara Temperature Sensor temperature"
+                },
+                "last_changed": "2022-04-11T15:27:29.882324+00:00",
+                "last_updated": "2022-04-11T15:27:29.882324+00:00",
+                "context": {
+                    "id": "fd4d934bc18c9240f3a3250750bec97a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": {
+                "native_value": "24.57",
+                "native_unit_of_measurement": "\u00b0C"
+            },
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aqara_temperature_sensor_humidity",
+                "state": "unavailable",
+                "attributes": {
+                    "state_class": "measurement",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "Aqara Temperature Sensor humidity"
+                },
+                "last_changed": "2022-04-11T15:27:29.882989+00:00",
+                "last_updated": "2022-04-11T15:27:29.882989+00:00",
+                "context": {
+                    "id": "b67071b3891c718607d979c6da7274e7",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": {
+                "native_value": "76.38",
+                "native_unit_of_measurement": "%"
+            },
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aqara_temperature_sensor_pressure",
+                "state": "unavailable",
+                "attributes": {
+                    "state_class": "measurement",
+                    "unit_of_measurement": "hPa",
+                    "device_class": "pressure",
+                    "friendly_name": "Aqara Temperature Sensor pressure"
+                },
+                "last_changed": "2022-04-11T15:27:29.883675+00:00",
+                "last_updated": "2022-04-11T15:27:29.883675+00:00",
+                "context": {
+                    "id": "1a8eca5194531d986cd4bd24aeea76e1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": {
+                "native_value": "1005.4",
+                "native_unit_of_measurement": "hPa"
+            },
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.mi_contact_sensor_contact",
+                "state": "unavailable",
+                "attributes": {
+                    "device_class": "door",
+                    "friendly_name": "Mi Contact Sensor contact"
+                },
+                "last_changed": "2022-04-11T15:27:29.909183+00:00",
+                "last_updated": "2022-04-11T15:27:29.909183+00:00",
+                "context": {
+                    "id": "e6a6d668e135accf7738c3631abae851",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.mi_motion_occupancy",
+                "state": "unavailable",
+                "attributes": {
+                    "device_class": "motion",
+                    "friendly_name": "Mi Motion occupancy"
+                },
+                "last_changed": "2022-04-11T15:27:29.909945+00:00",
+                "last_updated": "2022-04-11T15:27:29.909945+00:00",
+                "context": {
+                    "id": "fa6468644c8620f6d543a21e1e34d513",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.aqara_motion_sensor_occupancy",
+                "state": "unavailable",
+                "attributes": {
+                    "device_class": "motion",
+                    "friendly_name": "Aqara Motion Sensor occupancy"
+                },
+                "last_changed": "2022-04-11T15:27:29.910694+00:00",
+                "last_updated": "2022-04-11T15:27:29.910694+00:00",
+                "context": {
+                    "id": "471aa4eb548dff64e3189004c275f1a2",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T15:27:32.967127+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_00000000000000000000000000000000",
+                "state": "-72.4",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor_type": "iBeacon",
+                    "uuid": "00000000-0000-0000-0000-000000000000",
+                    "last_packet_id": "no packet id",
+                    "firmware": "iBeacon",
+                    "mac_address": "70:79:B3:19:5A:3B",
+                    "last_mean_of": 12,
+                    "median": -72.0,
+                    "mean": -72.4,
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi 00000000000000000000000000000000"
+                },
+                "last_changed": "2022-04-11T04:23:34.785565+00:00",
+                "last_updated": "2022-04-11T04:23:34.785565+00:00",
+                "context": {
+                    "id": "d18116908d74cc576e53c69602fec6e5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T04:23:48.212266+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_measured_power_00000000000000000000000000000000",
+                "state": "-59",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor_type": "iBeacon",
+                    "uuid": "00000000-0000-0000-0000-000000000000",
+                    "last_packet_id": "no packet id",
+                    "firmware": "iBeacon",
+                    "mac_address": "70:79:B3:19:5A:3B",
+                    "last_mean_of": 12,
+                    "median": -59.0,
+                    "mean": -59,
+                    "rssi": -72,
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble measured power 00000000000000000000000000000000"
+                },
+                "last_changed": "2022-04-11T04:23:34.785840+00:00",
+                "last_updated": "2022-04-11T04:23:34.785840+00:00",
+                "context": {
+                    "id": "2866dd7ebf13be8e1d5f86557f229bc2",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T04:23:48.212266+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_mac_00000000000000000000000000000000",
+                "state": "70:79:B3:19:5A:3B",
+                "attributes": {
+                    "sensor_type": "iBeacon",
+                    "uuid": "00000000-0000-0000-0000-000000000000",
+                    "last_packet_id": "no packet id",
+                    "firmware": "iBeacon",
+                    "mac_address": "70:79:B3:19:5A:3B",
+                    "rssi": -74,
+                    "icon": "mdi:alpha-m-circle-outline",
+                    "friendly_name": "ble mac 00000000000000000000000000000000"
+                },
+                "last_changed": "2022-04-11T04:06:33.676785+00:00",
+                "last_updated": "2022-04-11T04:06:33.676785+00:00",
+                "context": {
+                    "id": "55f398fcbcf50a0f115a582402bd9042",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T04:23:48.212266+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_major_00000000000000000000000000000000",
+                "state": "0",
+                "attributes": {
+                    "sensor_type": "iBeacon",
+                    "uuid": "00000000-0000-0000-0000-000000000000",
+                    "last_packet_id": "no packet id",
+                    "firmware": "iBeacon",
+                    "mac_address": "70:79:B3:19:5A:3B",
+                    "icon": "mdi:counter",
+                    "friendly_name": "ble major 00000000000000000000000000000000"
+                },
+                "last_changed": "2022-04-11T02:28:42.108266+00:00",
+                "last_updated": "2022-04-11T02:28:42.108266+00:00",
+                "context": {
+                    "id": "13864fe2842491dc828503591c31f4ce",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T04:23:48.212266+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_minor_00000000000000000000000000000000",
+                "state": "0",
+                "attributes": {
+                    "sensor_type": "iBeacon",
+                    "uuid": "00000000-0000-0000-0000-000000000000",
+                    "last_packet_id": "no packet id",
+                    "firmware": "iBeacon",
+                    "mac_address": "70:79:B3:19:5A:3B",
+                    "icon": "mdi:counter",
+                    "friendly_name": "ble minor 00000000000000000000000000000000"
+                },
+                "last_changed": "2022-04-11T02:28:42.108483+00:00",
+                "last_updated": "2022-04-11T02:28:42.108483+00:00",
+                "context": {
+                    "id": "6e9190a5c2bd51fabe34af4048e6e631",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "extra_data": null,
+            "last_seen": "2022-04-11T04:23:48.212266+00:00"
+        }
+    ]
+}

@@ -1,4 +1,8 @@
-single,True,2022-04-04 02:27
-single,False,2022-04-04 09:00
-single,True,2022-04-05 02:27
-single,False,2022-04-05 09:00
+triple,True,2022-04-04 02:27
+triple,False,2022-04-04 09:00
+triple,True,2022-04-07 03:00
+triple,False,2022-04-07 07:30
+triple,True,2022-04-08 03:00
+triple,False,2022-04-08 12:00
+triple,True,2022-04-09 03:00
+triple,False,2022-04-09 11:00
